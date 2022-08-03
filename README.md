@@ -16,18 +16,6 @@ docker build -t node-hello-world:latest .
 docker run -it -p 8080:8080 --name node-hello-world node-hello-world:latest
 ```
 
-## Run on Cloud Foudry
-
-Details about the Cloud Foundry deployment can be found in [manifest.yml](manifest.yml).
-
-```bash
-# target a cloud foundry region
-ibmcloud target --cf
-
-# push the app
-ibmcloud cf push
-```
-
 ## Run on IBM Kubernetes Service
 
 Ensure the container image URL is updated in [deployment.yaml](config/deployment.yaml).
